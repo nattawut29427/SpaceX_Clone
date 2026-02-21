@@ -8,7 +8,7 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata = {
-  title: "Modern Next.js App",
+  title: "SpaceX Clone",
   description: "A high-performance, responsive web application template",
 };
 
