@@ -1,0 +1,84 @@
+@import '../../app/styles/variables';
+@import '../../app/styles/mixins';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    padding: 96px;
+
+    @include tablet {
+        padding: 60px 40px; // ลด padding นอกลงหน่อยเวลาจอเล็กลง
+    }
+
+    @include mobile {
+        padding: 40px 20px;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+}
+
+.container__left {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    height: auto; 
+    
+    @include laptop {
+        flex-direction: column;
+    }
+
+    .infobox {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8; // เพิ่มระยะบรรทัดให้อ่านง่าย
+            color: $text-secondary-dark;
+            margin-top: 16px;
+
+
+            @include tablet {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 600px;
+        height: 400px; // เพิ่มความสูงให้สมดุลกับข้อความ
+        object-fit: cover;
+        display: block;
+        flex-shrink: 0;
+        border-radius: 12px; // เพิ่มความโค้งมนให้ดูทันสมัย
+
+        @include laptop {
+            max-width: 100%;
+            height: 300px;
+        }
+
+        @include mobile {
+            height: 200px;
+
+        }
+    }
+}

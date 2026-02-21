@@ -1,0 +1,70 @@
+@import '../../app/styles/variables';
+@import '../../app/styles/mixins';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem ;
+    transition: $transition-smooth;
+    // @include glassmorphism;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: var(--font-outfit);
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    &__links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        @include tablet {
+            display: none;
+        }
+
+        a {
+            font-weight: 500;
+            color: $text-secondary-dark;
+            transition: $transition-smooth;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__cta {
+        @include tablet {
+            display: none;
+        }
+    }
+}

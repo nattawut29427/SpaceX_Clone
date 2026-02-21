@@ -1,0 +1,19 @@
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+
+// Colors
+$primary-color: #6366f1; // Indigo
+$secondary-color: #ec4899; // Pink
+$accent-color: #8b5cf6; // Violet
+$background-dark: #0f172a; // Slate 900
+$background-light: #f8fafc; // Slate 50
+$text-primary-dark: #f1f5f9;
+$text-secondary-dark: #94a3b8;
+$text-primary-light: #1e293b;
+$text-secondary-light: #64748b;
+
+// Transitions
+$transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

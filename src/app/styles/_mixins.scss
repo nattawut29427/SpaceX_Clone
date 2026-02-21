@@ -1,0 +1,70 @@
+@import 'variables';
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @include mobile {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @include tablet {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$breakpoint-laptop}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @include laptop {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @include desktop {
+        @content;
+    }
+}
+
+// Custom range
+@mixin between($min, $max) {
+    @media (min-width: #{$min}) and (max-width: #{$max}) {
+        @content;
+    }
+}
+
+@mixin glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

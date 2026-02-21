@@ -1,0 +1,16 @@
+@import '../../app/styles/variables';
+@import '../../app/styles/mixins';
+
+.footer {
+    padding: 4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin-top: auto;
+
+    &__text {
+        color: $text-secondary-light;
+        font-size: 0.9rem;
+    }
+}
