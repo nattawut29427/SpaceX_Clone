@@ -3,7 +3,7 @@ export const bannerData = [
         id: 0,
         type: "video",
         src: "/video/Mar.mp4",
-        // src_mb: "/video/MarMb.mp4",
+        src_mb: "/video/MarMb.mp4",
         position: "center",
         title: "Making life \n multiplanetary",
         description:
