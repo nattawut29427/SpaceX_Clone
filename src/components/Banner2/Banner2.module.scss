@@ -193,9 +193,9 @@
     object-fit: cover;
     display: block;
 
-    @include tablet {
-      height: 67vh;
-    }
+    // @include tablet {
+    //   height: 67vh;
+    // }
   }
 
   img {
